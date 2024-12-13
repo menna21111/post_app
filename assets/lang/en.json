@@ -1,0 +1,11 @@
+{
+    "posts": "posts",
+    "create": "create post",
+    "title": "title",
+    "body": "post body",
+    "edit": "edit post",
+    "delete": "delete post",
+    "cancel": "cancel",
+    "save": "save",
+    "Details": "Details"
+}
