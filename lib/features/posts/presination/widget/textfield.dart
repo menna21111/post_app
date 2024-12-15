@@ -13,6 +13,7 @@ class Customtextfield extends StatelessWidget {
     this.icon,
     required this.labeltext,
     this.onIconTap, this.iswntedborder, this.func,
+     this.minLines
   });
 final bool? iswntedborder;
   final String hinttext;
@@ -21,12 +22,14 @@ final bool? iswntedborder;
   final IconData? icon;
   final VoidCallback? onIconTap;
  final FormFieldValidator<String>?  func;
+final int? minLines;
   @override
   Widget build(BuildContext context) {
    
     return Padding(
       padding:iswntedborder!? EdgeInsets.symmetric(horizontal: 30.w): EdgeInsets.symmetric(horizontal: 5.w,vertical: 2.h),
       child: TextFormField(
+        minLines: minLines,
         validator:func ,
         maxLines: null,
         controller: controller,

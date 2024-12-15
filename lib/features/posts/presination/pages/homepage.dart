@@ -71,7 +71,7 @@ class Homepage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return const Createpost();
+            return const Createpost(isupdated: false,);
           }));
         },
         child: const Icon(

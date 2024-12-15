@@ -41,7 +41,7 @@ class Posrrepoimplement implements Postsrepo {
         final theposts = await remotedatasource.getAllposts();
         localdata.cacheallpost(theposts);
         return right(theposts);
-      } on ServerException {
+      } on ServerException {sssss
         return left(ServerFailure());
       }
     } else {

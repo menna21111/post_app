@@ -1,13 +1,10 @@
-// import 'package:flutter/foundation.dart';
-// import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 
-// class Scaffoldmessanger extends StatelessWidget {
-//   const Scaffoldmessanger({super.key});
+import '../../../../core/constant/colors.dart';
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return ScaffoldMessenger.of(context).showSnackBar(
-//       child:  ,
-//     );
-//   }
-// }
+void showsnackbar(String message, BuildContext context,Color color) {
+  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+    content: Text(message,style: TextStyle(color: whitecolor, fontSize: 20),),
+backgroundColor: color,  ),
+  );
+}
