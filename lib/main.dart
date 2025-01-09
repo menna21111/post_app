@@ -67,7 +67,7 @@ class MyApp extends StatelessWidget {
               },
               theme: appTheme,
               debugShowCheckedModeBanner: false,
-              home: Homepage(),
+              home: const Homepage(),
             );
           }),
     );
